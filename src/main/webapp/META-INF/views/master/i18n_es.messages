@@ -22,6 +22,8 @@ master.welcome.text = \
 # master.menu #################################################################
 
 master.menu.home = Inicio
+master.menu.authenticated = Autenticado
+master.menu.user-account.announcement.list = Listar anuncios
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
