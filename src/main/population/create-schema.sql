@@ -48,6 +48,17 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `request` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `moment` datetime(6),
+        `reward` varchar(255),
+        `text` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
