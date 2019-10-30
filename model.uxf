@@ -319,9 +319,9 @@ has v</panel_attributes>
       <x>581</x>
       <y>406</y>
       <w>217</w>
-      <h>77</h>
+      <h>91</h>
     </coordinates>
-    <panel_attributes>Request
+    <panel_attributes>Requests
 --
 + title: String {NotBlank}
 + moment:Date {Temporal{TIMESTAMP},PAST}

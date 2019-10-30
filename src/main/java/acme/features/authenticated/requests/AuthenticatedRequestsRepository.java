@@ -10,23 +10,23 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.request;
+package acme.features.authenticated.requests;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.requests.Request;
+import acme.entities.requests.Requests;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AuthenticatedRequestRepository extends AbstractRepository {
+public interface AuthenticatedRequestsRepository extends AbstractRepository {
 
-	@Query("select r from Request a where r.id = ?1")
-	Request findOneById(int id);
+	@Query("select r from Requests a where r.id = ?1")
+	Requests findOneById(int id);
 
-	@Query("select r from Request r")
-	Collection<Request> findManyAll();
+	@Query("select r from Requests r")
+	Collection<Requests> findManyAll();
 
 }

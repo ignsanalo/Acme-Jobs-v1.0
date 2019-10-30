@@ -17,7 +17,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Request extends DomainEntity {
+public class Requests extends DomainEntity {
 
 	//Attributes ------------------------------------------------------------------------
 
@@ -39,6 +39,9 @@ public class Request extends DomainEntity {
 
 	@NotBlank
 	private String				reward;
+
+	@NotBlank
+	private String				ticker;
 
 	// Derived attributes -----------------------------------------------------------------
 

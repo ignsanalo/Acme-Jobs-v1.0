@@ -1,5 +1,5 @@
 /*
- * AuthenticatedRequestUpdateService.java
+ * AuthenticatedRequestCreateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -10,55 +10,55 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.request;
-
-import java.util.Collection;
+package acme.features.authenticated.requests;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.requests.Requests;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedRequestListService implements AbstractListService<Authenticated, Request> {
+public class AuthenticatedRequestsShowService implements AbstractShowService<Authenticated, Requests> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedRequestRepository repository;
+	private AuthenticatedRequestsRepository repository;
 
+	// AbstractCreateService<Authenticated, Request> ---------------------------
 
-	// AbstractUpdateService<Authenticated, Request> interface -----------------
 
 	@Override
-	public boolean authorise(final Request<Request> request) {
+	public boolean authorise(final Request<Requests> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Request> request, final Request entity, final Model model) {
+	public void unbind(final Request<Requests> request, final Requests entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "moment", "title");
+		request.unbind(entity, model, "title", "moment", "deadline", "text", "reward");
 	}
 
 	@Override
-	public Collection<Request> findMany(final Request<Request> request) {
-
+	public Requests findOne(final Request<Requests> request) {
 		assert request != null;
 
-		Collection<Request> result;
+		Requests result;
+		int id;
 
-		result = this.repository.findManyAll();
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneById(id);
 
 		return result;
-
 	}
+
 }
