@@ -313,4 +313,101 @@ has v</panel_attributes>
 </panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>406</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Request
+--
++ title: String {NotBlank}
++ moment:Date {Temporal{TIMESTAMP},PAST}
++ deadline: Date {Date}
++ text: String {NotBlank}
++ reward: String {NotBlank}
++ ticker: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>329</x>
+      <y>518</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ moment:Date {Temporal{TIMESTAMP},PAST}
++ deadline: Date {Date}
++ text: String {NotBlank}
++ amount: double {Digits(10, 2)}
++ ticker: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>518</y>
+      <w>217</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Company record
+--
++ name: String {NotBlank}
++ sector:String {NotBlank}
++ CEOname: String {NotBlank}
++ description: String {NotBlank}
++ web: String {URL}
++ contact: Integer {NotNull}
++ email: String {NotBlank, Email}
++ indication: String {}+ amount: double {Digits(10, 2)}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>329</x>
+      <y>616</y>
+      <w>203</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Store record
+--
++ name: String {NotBlank}
++ sector:String {NotBlank}
++ sectorname: String {NotBlank}
++ statement: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>651</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline:Date {Temporal{TIMESTAMP},FUTURE}
++ description: String {NotBlank}
++ goal : String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
