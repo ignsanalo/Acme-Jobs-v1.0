@@ -1,5 +1,5 @@
 /*
- * AuthenticatedRequestCreateService.java
+ * AuthenticatedRequestsCreateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -29,7 +29,7 @@ public class AuthenticatedRequestsShowService implements AbstractShowService<Aut
 	@Autowired
 	private AuthenticatedRequestsRepository repository;
 
-	// AbstractCreateService<Authenticated, Request> ---------------------------
+	// AbstractCreateService<Authenticated, Requests> ---------------------------
 
 
 	@Override
@@ -45,7 +45,7 @@ public class AuthenticatedRequestsShowService implements AbstractShowService<Aut
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "deadline", "text", "reward");
+		request.unbind(entity, model, "title", "moment", "deadline", "text", "reward", "ticker");
 	}
 
 	@Override

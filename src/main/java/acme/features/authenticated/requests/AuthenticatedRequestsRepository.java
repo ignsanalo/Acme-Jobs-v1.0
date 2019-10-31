@@ -1,5 +1,5 @@
 /*
- * AuthenticatedRequestRepository.java
+ * AuthenticatedRequestsRepository.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -23,7 +23,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedRequestsRepository extends AbstractRepository {
 
-	@Query("select r from Requests a where r.id = ?1")
+	@Query("select r from Requests r where r.id = ?1")
 	Requests findOneById(int id);
 
 	@Query("select r from Requests r")

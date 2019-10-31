@@ -1,5 +1,5 @@
 /*
- * AuthenticatedRequestUpdateService.java
+ * AuthenticatedRequestsUpdateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -32,7 +32,7 @@ public class AuthenticatedRequestsListService implements AbstractListService<Aut
 	private AuthenticatedRequestsRepository repository;
 
 
-	// AbstractUpdateService<Authenticated, Request> interface -----------------
+	// AbstractUpdateService<Authenticated, Requests> interface -----------------
 
 	@Override
 	public boolean authorise(final Request<Requests> request) {
