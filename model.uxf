@@ -299,7 +299,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>329</x>
+      <x>56</x>
       <y>406</y>
       <w>217</w>
       <h>77</h>
@@ -316,9 +316,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>581</x>
-      <y>406</y>
-      <w>217</w>
+      <x>350</x>
+      <y>399</y>
+      <w>308</w>
       <h>91</h>
     </coordinates>
     <panel_attributes>Requests
@@ -328,7 +328,7 @@ has v</panel_attributes>
 + deadline: Date {Date}
 + text: String {NotBlank}
 + reward: String {NotBlank}
-+ ticker: String {NotBlank}
++ ticker: String {NotBlank, Unique, Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}
 
 </panel_attributes>
     <additional_attributes/>
@@ -336,8 +336,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>329</x>
-      <y>518</y>
+      <x>56</x>
+      <y>511</y>
       <w>217</w>
       <h>77</h>
     </coordinates>
@@ -356,8 +356,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>581</x>
-      <y>518</y>
+      <x>350</x>
+      <y>504</y>
       <w>217</w>
       <h>119</h>
     </coordinates>
@@ -378,8 +378,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>329</x>
-      <y>616</y>
+      <x>56</x>
+      <y>623</y>
       <w>203</w>
       <h>70</h>
     </coordinates>
@@ -396,8 +396,8 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>581</x>
-      <y>651</y>
+      <x>350</x>
+      <y>637</y>
       <w>217</w>
       <h>77</h>
     </coordinates>

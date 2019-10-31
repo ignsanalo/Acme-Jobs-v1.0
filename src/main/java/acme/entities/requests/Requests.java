@@ -10,6 +10,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -42,7 +43,7 @@ public class Requests extends DomainEntity {
 	private String				reward;
 
 	@Column(unique = true)
-	//	@Pattern(regexp = "")
+	@Pattern(regexp = "^[R]{1}[A-Z]{4}\\-[0-9]{5}$")
 	@NotBlank
 	private String				ticker;
 
