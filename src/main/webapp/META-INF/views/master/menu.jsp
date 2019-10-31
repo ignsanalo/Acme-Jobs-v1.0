@@ -41,7 +41,9 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement.list" action="/authenticated/announcement/list" />
+			<acme:menu-suboption code="master.menu.user-account.requests.list" action="/authenticated/requests/list" />
 		</acme:menu-option>
+		
 		
 	</acme:menu-left>
 

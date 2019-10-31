@@ -1,5 +1,5 @@
 /*
- * AuthenticatedRequestsCreateService.java
+ * AuthenticatedRequestsUpdateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -10,55 +10,56 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.announcement;
+package acme.features.authenticated.requests;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.requests.Requests;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedAnnouncementShowService implements AbstractShowService<Authenticated, Announcement> {
+public class AuthenticatedRequestsListService implements AbstractListService<Authenticated, Requests> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedAnnouncementRepository repository;
+	private AuthenticatedRequestsRepository repository;
 
-	// AbstractCreateService<Authenticated, Announcement> ---------------------------
 
+	// AbstractUpdateService<Authenticated, Requests> interface -----------------
 
 	@Override
-	public boolean authorise(final Request<Announcement> request) {
+	public boolean authorise(final Request<Requests> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Announcement> request, final Announcement entity, final Model model) {
+	public void unbind(final Request<Requests> request, final Requests entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "moment", "title");
 	}
 
 	@Override
-	public Announcement findOne(final Request<Announcement> request) {
+	public Collection<Requests> findMany(final Request<Requests> request) {
+
 		assert request != null;
 
-		Announcement result;
-		int id;
+		Collection<Requests> result;
 
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = this.repository.findManyAll();
 
 		return result;
-	}
 
+	}
 }

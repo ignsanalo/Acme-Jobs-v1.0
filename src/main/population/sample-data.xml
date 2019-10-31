@@ -41,5 +41,35 @@
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+	
+	
+	<!-- Requests -->
+	
+	<bean id="request01" class="acme.entities.requests.Requests">
+		<property name="title" value="Sample request 01" />
+		<property name="moment" value="2019/10/05 17:31" />
+		<property name="deadline" value="2021/11/10 23:30" />
+		<property name="text" value="This is a description of a sample request"/>
+		<property name="reward" value="Piruleta"/>
+		<property name="ticker" value="RAKDJ-09376"/>
+	</bean>
+	
+	<bean id="request02" class="acme.entities.requests.Requests">
+		<property name="title" value="Sample request 02" />
+		<property name="moment" value="2019/03/11 13:23" />
+		<property name="deadline" value="2021/11/11 12:45" />
+		<property name="text" value="This is a description of another request"/>
+		<property name="reward" value="Chupachups"/>
+		<property name="ticker" value="RHDGB-63782"/>
+	</bean>
+	
+	<bean id="request03" class="acme.entities.requests.Requests">
+		<property name="title" value="Sample request 03" />
+		<property name="moment" value="2019/09/09 10:30" />
+		<property name="deadline" value="2021/12/10 18:00" />
+		<property name="text" value="This is a very old request"/>
+		<property name="reward" value="Sugu"/>
+		<property name="ticker" value="RUQYA-73491"/>
+	</bean>
 
 </beans>
