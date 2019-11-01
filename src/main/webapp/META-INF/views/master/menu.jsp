@@ -23,8 +23,6 @@
 
 		</acme:menu-option>
 
-
-
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator />
@@ -41,8 +39,14 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement.list" action="/authenticated/announcement/list" />
+			<acme:menu-suboption code="master.menu.user-account.requests.list" action="/authenticated/requests/list" />
+			<acme:menu-suboption code="master.menu.user-account.companyrecords.list" action="/authenticated/companyrecords/list" />
+			<acme:menu-suboption code="master.menu.user-account.investorrecords.list" action="/authenticated/investorrecords/list" />
+			<acme:menu-suboption code="master.menu.user-account.offers.list" action="/authenticated/offers/list" />
+			<acme:menu-suboption code="master.menu.user-account.challenges.list" action="/authenticated/challenges/list" />
 		</acme:menu-option>
-		
+
+
 	</acme:menu-left>
 
 	<acme:menu-right>

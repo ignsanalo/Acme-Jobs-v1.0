@@ -24,6 +24,11 @@ master.welcome.text = \
 master.menu.home = Inicio
 master.menu.authenticated = Autenticado
 master.menu.user-account.announcement.list = Listar anuncios
+master.menu.user-account.requests.list = Listar peticiones
+master.menu.user-account.companyrecords.list = Listar registros de la compañía
+master.menu.user-account.investorrecords.list = Listar registros de inversionistas
+master.menu.user-account.offers.list = Listar ofertas
+master.menu.user-account.challenges.list = Listar desafíos
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
@@ -77,7 +82,7 @@ master.company.text = \
 	Acme Jobs, Inc. es una compañía fictícia que proporciona un proyecto \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Jobs, Inc.
 master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
