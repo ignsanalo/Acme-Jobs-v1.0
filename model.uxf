@@ -316,6 +316,20 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>70</x>
+      <y>357</y>
+      <w>231</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal{TIMESTAMP},PAST}
++ deadline: Date {Temporal{TIMESTAMP},PAST}
++ text: String {NotBlank}
++ range: Money
++ ticker: String {Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}}</panel_attributes>
+
       <x>350</x>
       <y>399</y>
       <w>308</w>
