@@ -42,6 +42,13 @@
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
 	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04" />
+		<property name="moment" value="2019/10/29 19:10" />
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is a new announcement"/>
+	</bean>
+	
 
 	<!-- Offers -->
 	
