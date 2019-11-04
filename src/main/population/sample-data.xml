@@ -41,5 +41,18 @@
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+	
+	<bean id="companyrecord1" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Carlosia" />
+		<property name="sector" value="Bacalao" />
+		<property name="ceo" value="Carles" />
+		<property name="description" value="This is a very old empresa"/>
+		<property name="web" value="https://elpais.com/" />
+		<property name="phone" value="+34(999)567567" />
+		<property name="email" value="Carles@gmail.com" />
+		<property name="incorporated" value="true" />
+		<property name="stars" value="4" />
+		
+	</bean>
 
 </beans>

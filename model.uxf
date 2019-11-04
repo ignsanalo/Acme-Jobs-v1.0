@@ -299,8 +299,30 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>329</x>
-      <y>406</y>
+      <x>574</x>
+      <y>420</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ ceo: String {NotBlank}
++ description: String {NotBlank}
++ web : String {URL}
++ phone: String {NotBlank}
++ email: String {Email}
++ starts: Integer {Min(0)}{Max(5)}
++ incorporated: Boolean {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>420</y>
       <w>217</w>
       <h>77</h>
     </coordinates>
