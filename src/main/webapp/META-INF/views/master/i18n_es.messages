@@ -25,6 +25,7 @@ master.menu.home = Inicio
 master.menu.authenticated = Autenticado
 master.menu.user-account.announcement.list = Listar anuncios
 master.menu.user-account.requests.list = Listar peticiones
+master.menu.user-account.challenge.list = Listar desafíos
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
