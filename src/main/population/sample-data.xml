@@ -55,7 +55,7 @@
 	<bean id="offer01" class="acme.entities.offers.Offer">
 		<property name="title" value="Sample offer 01" />
 		<property name="moment" value="2019/06/10 11:00" />
-		<property name="deadline" value="2019/07/10 11:00" />
+		<property name="deadline" value="2021/07/10 11:00" />
 		<property name="text" value="This is a description of a sample offer"/>
 		<property name="range" value="50€"/>
 		<property name="ticker" value="OABCD-12345"/>
@@ -64,7 +64,7 @@
 	<bean id="offer02" class="acme.entities.offers.Offer">
 		<property name="title" value="Sample offer 02" />
 		<property name="moment" value="2019/07/15 18:00" />
-		<property name="deadline" value="2019/08/15 18:00" />
+		<property name="deadline" value="2021/08/15 18:00" />
 		<property name="text" value="This is a description of another offer"/>
 		<property name="range" value="30€"/>
 		<property name="ticker" value="OEFGH-12345"/>
@@ -73,7 +73,7 @@
 	<bean id="offer03" class="acme.entities.offers.Offer">
 		<property name="title" value="Sample offer 03" />
 		<property name="moment" value="2019/08/15 21:00" />
-		<property name="deadline" value="2019/09/15 21:00" />
+		<property name="deadline" value="2021/09/15 21:00" />
 		<property name="text" value="This is a description of another offer"/>
 		<property name="range" value="60€"/>
 		<property name="ticker" value="OIJKL-12345"/>
