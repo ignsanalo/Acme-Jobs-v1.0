@@ -1,5 +1,5 @@
 /*
- * AuthenticatedRequestsCreateService.java
+ * AuthenticatedAnnouncementUpdateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -10,55 +10,56 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.announcement;
+package acme.features.authenticated.challenge;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.challenges.Challenge;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedAnnouncementShowService implements AbstractShowService<Authenticated, Announcement> {
+public class AuthenticatedChallengeListService implements AbstractListService<Authenticated, Challenge> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedAnnouncementRepository repository;
+	private AuthenticatedChallengeRepository repository;
 
-	// AbstractCreateService<Authenticated, Announcement> ---------------------------
 
+	// AbstractUpdateService<Authenticated, Announcement> interface -----------------
 
 	@Override
-	public boolean authorise(final Request<Announcement> request) {
+	public boolean authorise(final Request<Challenge> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Announcement> request, final Announcement entity, final Model model) {
+	public void unbind(final Request<Challenge> request, final Challenge entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "title", "deadline");
 	}
 
 	@Override
-	public Announcement findOne(final Request<Announcement> request) {
+	public Collection<Challenge> findMany(final Request<Challenge> request) {
+
 		assert request != null;
 
-		Announcement result;
-		int id;
+		Collection<Challenge> result;
 
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = this.repository.findManyAll();
 
 		return result;
-	}
 
+	}
 }

@@ -1,3 +1,5 @@
+
+
 <%--
 - menu.jsp
 -
@@ -20,16 +22,17 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/" />
-			<acme:menu-suboption code="master.menu.anonymous.companyrecord.list" action="/anonymous/companyrecord/list" />
+			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list" />
+			<acme:menu-suboption code="master.menu.anonymous.investorrecords.list" action="/anonymous/investorrecords/list" />
+      <acme:menu-suboption code="master.menu.anonymous.companyrecord.list" action="/anonymous/companyrecord/list" />
+			
 			
 
 		</acme:menu-option>
 
-
-
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
-			<acme:menu-suboption code="master.menu.administrator.announcement.list" action="/administrator/announcement/list" />
+      <acme:menu-suboption code="master.menu.administrator.announcement.list" action="/administrator/announcement/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
 		</acme:menu-option>
@@ -44,9 +47,14 @@
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement.list" action="/authenticated/announcement/list" />
+			<acme:menu-suboption code="master.menu.user-account.requests.list" action="/authenticated/requests/list" />
 			<acme:menu-suboption code="master.menu.user-account.companyrecord.list" action="/authenticated/companyrecord/list" />
+			<acme:menu-suboption code="master.menu.user-account.investorrecords.list" action="/authenticated/investorrecords/list" />
+			<acme:menu-suboption code="master.menu.user-account.offer.list" action="/authenticated/offer/list" />
+			<acme:menu-suboption code="master.menu.user-account.challenge.list" action="/authenticated/challenge/list" />
 		</acme:menu-option>
-		
+
+
 	</acme:menu-left>
 
 	<acme:menu-right>
@@ -72,4 +80,6 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()" />
 	</acme:menu-right>
 </acme:menu-bar>
+
+
 
