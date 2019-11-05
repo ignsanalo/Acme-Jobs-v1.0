@@ -316,19 +316,19 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>315</x>
+
+      <x>378</x>
       <y>406</y>
-      <w>224</w>
-      <h>98</h>
+      <w>210</w>
+      <h>70</h>
     </coordinates>
-    <panel_attributes>Offer
+    <panel_attributes>Investors
 --
-+ title: String {NotBlank}
-+ moment: Date {Temporal{TIMESTAMP},PAST}
-+ deadline: Date {Temporal{TIMESTAMP},PAST}
-+ text: String {NotBlank}
-+ range: Money
-+ ticker: String {Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}}</panel_attributes>
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ statement: String {NotBlank}
++ stars: Integer {Min(value = 0), Max(value=5)}</panel_attributes>
+
     <additional_attributes/>
   </element>
 </diagram>
