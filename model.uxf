@@ -327,7 +327,7 @@ has v</panel_attributes>
 + moment: Date {Temporal{TIMESTAMP},PAST}
 + deadline: Date {Temporal{TIMESTAMP},PAST}
 + text: String {NotBlank}
-+ range: Money
++ range: Money {NotNull}
 + ticker: String {Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}}</panel_attributes>
     <additional_attributes/>
   </element>
