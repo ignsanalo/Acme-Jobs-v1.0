@@ -1,3 +1,4 @@
+
 <%--
 - menu.jsp
 -
@@ -21,6 +22,8 @@
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/" />
 			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list" />
+			<acme:menu-suboption code="master.menu.anonymous.investorrecords.list" action="/anonymous/investorrecords/list" />
+			
 			
 
 		</acme:menu-option>
@@ -42,13 +45,10 @@
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.user-account.announcement.list" action="/authenticated/announcement/list" />
 			<acme:menu-suboption code="master.menu.user-account.requests.list" action="/authenticated/requests/list" />
-
-
 			<acme:menu-suboption code="master.menu.user-account.companyrecords.list" action="/authenticated/companyrecords/list" />
 			<acme:menu-suboption code="master.menu.user-account.investorrecords.list" action="/authenticated/investorrecords/list" />
 			<acme:menu-suboption code="master.menu.user-account.offer.list" action="/authenticated/offer/list" />
 			<acme:menu-suboption code="master.menu.user-account.challenge.list" action="/authenticated/challenge/list" />
-
 		</acme:menu-option>
 
 
@@ -77,4 +77,5 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()" />
 	</acme:menu-right>
 </acme:menu-bar>
+
 

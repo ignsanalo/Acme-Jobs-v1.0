@@ -11,10 +11,6 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
-    alter table `configuration_spam_words` 
-       drop 
-       foreign key `FK5lk29cpqe3960a943x8x8j4yh`;
-
     alter table `consumer` 
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
@@ -32,8 +28,6 @@
     drop table if exists `authenticated`;
 
     drop table if exists `configuration`;
-
-    drop table if exists `configuration_spam_words`;
 
     drop table if exists `consumer`;
 
