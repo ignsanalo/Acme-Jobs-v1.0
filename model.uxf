@@ -396,37 +396,24 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>343</x>
-      <y>637</y>
+      <x>581</x>
+      <y>518</y>
       <w>231</w>
-      <h>91</h>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Challenge
 --
 + title: String {NotBlank}
-+ deadline:Date {Temporal{TIMESTAMP},FUTURE}
++ deadline:Date {Temporal{TIMESTAMP}}
 + description: String {NotBlank}
-+ goal : String {NotBlank}
-+ reward : String {NotBlank}
-+ level : Level {NotNull}
++ goalgold : String {NotBlank}
++ rewardgold : Money {NotNull, Valid}
++ goalsilver : String {NotBlank}
++ rewardsilver : Money {NotNull, Valid}
++ goalbronze : String {NotBlank}
++ rewardbronze : Money {NotNull, Valid}
 
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>595</x>
-      <y>637</y>
-      <w>175</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-Level
---
-+ GOLD
-+ SILVER
-+ BRONZE
+
 </panel_attributes>
     <additional_attributes/>
   </element>
