@@ -80,26 +80,6 @@
 		<property name="ticker" value="OIJKL-12345" />
 	</bean>
 
-
-	<!-- Configuration -->
-
-	<bean id="configuration" class="acme.entities.configuration.Configuration">
-		<property name="spamThreshold" value="1.0" />
-		<property name="spamWords">
-			<list>
-				<value>sex</value>
-				<value>hard core</value>
-				<value>viagra</value>
-				<value>cialis</value>
-				<value>nigeria</value>
-				<value>you´ve won</value>
-				<value>million dollar</value>
-			</list>
-		</property>
-
-	</bean>
-
-
 	<!-- Requests -->
 
 	<bean id="request01" class="acme.entities.requests.Requests">
