@@ -27,7 +27,7 @@ master.menu.user-account.announcement.list = Listar anuncios
 master.menu.user-account.requests.list = Listar peticiones
 master.menu.user-account.companyrecords.list = Listar registros de la compañía
 master.menu.user-account.investorrecords.list = Listar registros de inversionistas
-master.menu.user-account.offers.list = Listar ofertas
+master.menu.user-account.offer.list = Listar ofertas
 master.menu.user-account.challenges.list = Listar desafíos
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
@@ -37,6 +37,7 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.announcement.list = Listar anuncios
 
 # master.menu.administrator ###################################################
 

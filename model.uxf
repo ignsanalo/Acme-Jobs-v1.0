@@ -316,6 +316,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
+
       <x>378</x>
       <y>406</y>
       <w>210</w>
@@ -327,6 +328,7 @@ has v</panel_attributes>
 + sector: String {NotBlank}
 + statement: String {NotBlank}
 + stars: Integer {Min(value = 0), Max(value=5)}</panel_attributes>
+
     <additional_attributes/>
   </element>
 </diagram>

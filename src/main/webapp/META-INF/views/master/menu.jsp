@@ -20,6 +20,8 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/" />
+			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list" />
+			
 
 		</acme:menu-option>
 
@@ -42,7 +44,7 @@
 			<acme:menu-suboption code="master.menu.user-account.requests.list" action="/authenticated/requests/list" />
 			<acme:menu-suboption code="master.menu.user-account.companyrecords.list" action="/authenticated/companyrecords/list" />
 			<acme:menu-suboption code="master.menu.user-account.investorrecords.list" action="/authenticated/investorrecords/list" />
-			<acme:menu-suboption code="master.menu.user-account.offers.list" action="/authenticated/offers/list" />
+			<acme:menu-suboption code="master.menu.user-account.offer.list" action="/authenticated/offer/list" />
 			<acme:menu-suboption code="master.menu.user-account.challenges.list" action="/authenticated/challenges/list" />
 		</acme:menu-option>
 
