@@ -1,3 +1,4 @@
+
 # i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
@@ -12,7 +13,7 @@
 
 master.banner.background = #FFE97F 
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -28,7 +29,7 @@ master.menu.user-account.requests.list = Listar peticiones
 master.menu.user-account.companyrecords.list = Listar registros de la compañía
 master.menu.user-account.investorrecords.list = Listar registros de inversores
 master.menu.user-account.offer.list = Listar ofertas
-master.menu.user-account.challenges.list = Listar desafíos
+master.menu.user-account.challenge.list = Listar desafíos
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir

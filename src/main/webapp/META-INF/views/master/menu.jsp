@@ -1,3 +1,4 @@
+
 <%--
 - menu.jsp
 -
@@ -47,7 +48,7 @@
 			<acme:menu-suboption code="master.menu.user-account.companyrecords.list" action="/authenticated/companyrecords/list" />
 			<acme:menu-suboption code="master.menu.user-account.investorrecords.list" action="/authenticated/investorrecords/list" />
 			<acme:menu-suboption code="master.menu.user-account.offer.list" action="/authenticated/offer/list" />
-			<acme:menu-suboption code="master.menu.user-account.challenges.list" action="/authenticated/challenges/list" />
+			<acme:menu-suboption code="master.menu.user-account.challenge.list" action="/authenticated/challenge/list" />
 		</acme:menu-option>
 
 
@@ -76,4 +77,5 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()" />
 	</acme:menu-right>
 </acme:menu-bar>
+
 

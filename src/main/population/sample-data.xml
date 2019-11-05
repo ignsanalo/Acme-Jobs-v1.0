@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- - sample-data.xml - - Copyright (c) 2019 Rafael Corchuelo. - - In keeping with the traditional purpose of furthering education and 
@@ -130,6 +131,44 @@
 		<property name="sector" value="Cinematographic" />
 		<property name="statement" value="This is a short statement" />
 		<property name="stars" value="4"/>
+	</bean>
+  
+  		<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 01" />
+		<property name="deadline" value="2020/11/10 00:00" />
+		<property name="description" value="This is a description of a sample challenge"/>
+		<property name="goalGold" value="This is the goal gold"/>
+		<property name="rewardGold" value="€1000.0"/>
+		<property name="goalSilver" value="This is the goal silver"/>
+		<property name="rewardSilver" value="€800.0"/>
+		<property name="goalBronze" value="This is the goal bronze"/>
+		<property name="rewardBronze" value="€500.0"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 02" />
+		<property name="deadline" value="2020/09/07 00:00" />
+		<property name="description" value="This is a description of another sample challenge"/>
+		<property name="goalGold" value="This is the goal gold"/>
+		<property name="rewardGold" value="€400.0"/>
+		<property name="goalSilver" value="This is the goal silver"/>
+		<property name="rewardSilver" value="€200.0"/>
+		<property name="goalBronze" value="This is the goal bronze"/>
+		<property name="rewardBronze" value="€100.0"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 03" />
+		<property name="deadline" value="2021/03/10 17:00" />
+		<property name="description" value="This is a new sample challenge"/>
+		<property name="goalGold" value="This is the goal gold"/>
+		<property name="rewardGold" value="€100.0"/>
+		<property name="goalSilver" value="This is the goal silver"/>
+		<property name="rewardSilver" value="€50.0"/>
+		<property name="goalBronze" value="This is the goal bronze"/>
+		<property name="rewardBronze" value="€25.0"/>
 	</bean>
 
 </beans>
