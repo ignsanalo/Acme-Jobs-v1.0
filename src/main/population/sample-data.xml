@@ -48,7 +48,7 @@
 		<property name="ceo" value="Carles" />
 		<property name="description" value="This is a very old empresa"/>
 		<property name="web" value="https://elpais.com/" />
-		<property name="phone" value="+34(999)567567" />
+		<property name="phone" value="123456789" />
 		<property name="email" value="Carles@gmail.com" />
 		<property name="incorporated" value="true" />
 		<property name="stars" value="4" />

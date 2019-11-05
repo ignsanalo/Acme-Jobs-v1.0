@@ -1,6 +1,8 @@
 
 package acme.entities.companyrecords;
 
+import java.beans.Transient;
+
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
@@ -38,7 +40,7 @@ public class Companyrecord extends DomainEntity {
 	private String				web;
 
 	@NotBlank
-	@Pattern(regexp = "^[+]{0,1}[1-9]{0,3}[\\s]{0,1}[(]{0,1}[1-9]{0,4}[)]{0,1}[\\s]{0,1}[0-9]{6,10}}")
+	@Pattern(regexp = "^[+]{0,1}[1-9]{0,3}[\\s]{0,1}[(]{0,1}[1-9]{0,4}[)]{0,1}[\\s]{0,1}[0-9]{6,10}")
 	private String				phone;
 
 	@Email
@@ -50,4 +52,18 @@ public class Companyrecord extends DomainEntity {
 	@Max(5)
 	private Integer				stars;
 
+
+	//Derivados
+
+	@Transient
+	public String getIncorporatedName() {
+		StringBuilder result;
+
+		result = new StringBuilder();
+		result.append(this.name);
+		result.append(", ");
+		result.append("Inc");
+
+		return result.toString();
+	}
 }
