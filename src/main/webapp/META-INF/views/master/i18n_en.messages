@@ -39,6 +39,7 @@ master.menu.anonymous.companyrecord.list = Company Records
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.announcement.list = Announcement
 
 # master.menu.provider ########################################################
 

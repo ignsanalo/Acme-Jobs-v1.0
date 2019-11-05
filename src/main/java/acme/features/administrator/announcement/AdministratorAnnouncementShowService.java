@@ -1,47 +1,47 @@
 
-package acme.features.authenticated.companyrecord;
+package acme.features.administrator.announcement;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.companyrecords.Companyrecord;
+import acme.entities.announcements.Announcement;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedCompanyrecordShowService implements AbstractShowService<Authenticated, Companyrecord> {
+public class AdministratorAnnouncementShowService implements AbstractShowService<Administrator, Announcement> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedCompanyrecordRepository repository;
+	private AdministratorAnnouncementRepository repository;
 
 	// AbstractCreateService<Authenticated, Announcement> ---------------------------
 
 
 	@Override
-	public boolean authorise(final Request<Companyrecord> request) {
+	public boolean authorise(final Request<Announcement> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Companyrecord> request, final Companyrecord entity, final Model model) {
+	public void unbind(final Request<Announcement> request, final Announcement entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector", "ceo", "description", "web", "phone", "email", "incorporated", "stars");
+		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
 	}
 
 	@Override
-	public Companyrecord findOne(final Request<Companyrecord> request) {
+	public Announcement findOne(final Request<Announcement> request) {
 		assert request != null;
 
-		Companyrecord result;
+		Announcement result;
 		int id;
 
 		id = request.getModel().getInteger("id");

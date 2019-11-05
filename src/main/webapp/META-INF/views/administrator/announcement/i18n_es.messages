@@ -1,0 +1,9 @@
+administrator.announcement.form.label.title = Titulo:
+administrator.announcement.form.label.moment = Momento:
+administrator.announcement.form.label.moreInfo = Mas Info:
+administrator.announcement.form.label.text = Texto:
+administrator.announcement.form.button.return = Return
+
+
+administrator.announcement.list.label.moment = Momento
+administrator.announcement.list.label.title = Titulo
