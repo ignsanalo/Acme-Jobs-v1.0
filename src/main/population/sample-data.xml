@@ -48,10 +48,36 @@
 		<property name="ceo" value="Carles" />
 		<property name="description" value="This is a very old empresa"/>
 		<property name="web" value="https://elpais.com/" />
-		<property name="phone" value="123456789" />
+		<property name="phone" value="+32(999)123456" />
 		<property name="email" value="Carles@gmail.com" />
-		<property name="incorporated" value="true" />
+		<property name="incorporated" value="false" />
 		<property name="stars" value="4" />
+		
+	</bean>
+	
+	<bean id="companyrecord2" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Acme" />
+		<property name="sector" value="Pescado" />
+		<property name="ceo" value="Antonio" />
+		<property name="description" value="I like this world"/>
+		<property name="web" value="https://elpais.com/" />
+		<property name="phone" value="123456789" />
+		<property name="email" value="Manu@gmail.com" />
+		<property name="incorporated" value="false" />
+		<property name="stars" value="4" />
+		
+	</bean>
+	
+	<bean id="companyrecord3" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="PitiClin" />
+		<property name="sector" value="Muebles" />
+		<property name="ceo" value="Manuel" />
+		<property name="description" value="What a fantastic furniture"/>
+		<property name="web" value="https://elpais.com/" />
+		<property name="phone" value="+32 123456" />
+		<property name="email" value="Antonio@gmail.com" />
+		<property name="incorporated" value="true" />
+		<property name="stars" value="1" />
 		
 	</bean>
 

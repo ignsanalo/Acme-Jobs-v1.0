@@ -9,5 +9,5 @@ authenticated.companyrecord.form.label.incorporated = Incorporated
 authenticated.companyrecord.form.label.stars = Stars
 authenticated.companyrecord.form.button.return = Return
 
-authenticated.companyrecord.list.label.description= Description
+authenticated.companyrecord.list.label.sector= Sector
 authenticated.companyrecord.list.label.name= Name

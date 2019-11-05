@@ -11,7 +11,6 @@
 	<acme:form-url code="anonymous.companyrecord.form.label.web" path="web"/>
 	<acme:form-textbox code="anonymous.companyrecord.form.label.phone" path="phone"/>
 	<acme:form-textbox code="anonymous.companyrecord.form.label.email" path="email"/>
-	<acme:form-checkbox code="anonymous.companyrecord.form.label.incorporated" path="incorporated"/>
 	<acme:form-integer code="anonymous.companyrecord.form.label.stars" path="stars"/>
 	
 	

@@ -9,5 +9,5 @@ anonymous.companyrecord.form.label.incorporated = Incorporated
 anonymous.companyrecord.form.label.stars = Estrellas
 anonymous.companyrecord.form.button.return = Volver
 
-anonymous.companyrecord.list.label.description= Descripción
+anonymous.companyrecord.list.label.sector= Sector
 anonymous.companyrecord.list.label.name= Nombre

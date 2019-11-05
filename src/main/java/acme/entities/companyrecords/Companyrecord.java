@@ -8,6 +8,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.URL;
@@ -37,19 +38,23 @@ public class Companyrecord extends DomainEntity {
 	private String				description;
 
 	@URL
+	@NotBlank
 	private String				web;
 
 	@NotBlank
-	@Pattern(regexp = "^[+]{0,1}[1-9]{0,3}[\\s]{0,1}[(]{0,1}[1-9]{0,4}[)]{0,1}[\\s]{0,1}[0-9]{6,10}")
+	@Pattern(regexp = "^([+][1-9]{0,3}[\\s]{0,1})?([(][1-9]{0,4}[)][\\s]{0,1})?[0-9]{6,10}$")
 	private String				phone;
 
 	@Email
+	@NotNull
 	private String				email;
 
+	@NotNull
 	private Boolean				incorporated;
 
 	@Min(0)
 	@Max(5)
+
 	private Integer				stars;
 
 
@@ -58,11 +63,19 @@ public class Companyrecord extends DomainEntity {
 	@Transient
 	public String getIncorporatedName() {
 		StringBuilder result;
-
 		result = new StringBuilder();
-		result.append(this.name);
-		result.append(", ");
-		result.append("Inc");
+		if (this.incorporated) {
+			result.append(this.name);
+			result.append(", ");
+			result.append("Inc.");
+
+		} else {
+
+			result.append(this.name);
+			result.append(", ");
+			result.append("LLC");
+
+		}
 
 		return result.toString();
 	}

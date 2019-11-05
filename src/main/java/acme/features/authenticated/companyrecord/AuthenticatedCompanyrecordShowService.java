@@ -46,6 +46,7 @@ public class AuthenticatedCompanyrecordShowService implements AbstractShowServic
 
 		id = request.getModel().getInteger("id");
 		result = this.repository.findOneById(id);
+		result.setName(result.getIncorporatedName());
 
 		return result;
 	}
