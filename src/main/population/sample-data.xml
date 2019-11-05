@@ -66,9 +66,9 @@
 		<property name="title" value="Sample offer 02" />
 		<property name="moment" value="2019/07/15 18:00" />
 		<property name="deadline" value="2021/08/15 18:00" />
-		<property name="text" value="This is a description of another offer"/>
-		<property name="range" value="30€"/>
-		<property name="ticker" value="OEFGH-12345"/>
+		<property name="text" value="This is a description of another offer" />
+		<property name="range" value="30€" />
+		<property name="ticker" value="OEFGH-12345" />
 	</bean>
 
 	<bean id="offer03" class="acme.entities.offers.Offer">
@@ -87,7 +87,7 @@
 		<property name="moment" value="2019/10/05 17:31" />
 		<property name="deadline" value="2021/11/10 23:30" />
 		<property name="text" value="This is a description of a sample request" />
-		<property name="reward" value="Piruleta" />
+		<property name="reward" value="500€" />
 		<property name="ticker" value="RAKDJ-09376" />
 	</bean>
 
@@ -96,7 +96,7 @@
 		<property name="moment" value="2019/03/11 13:23" />
 		<property name="deadline" value="2021/11/11 12:45" />
 		<property name="text" value="This is a description of another request" />
-		<property name="reward" value="Chupachups" />
+		<property name="reward" value="410€" />
 		<property name="ticker" value="RHDGB-63782" />
 	</bean>
 
@@ -105,7 +105,7 @@
 		<property name="moment" value="2019/09/09 10:30" />
 		<property name="deadline" value="2021/12/10 18:00" />
 		<property name="text" value="This is a very old request" />
-		<property name="reward" value="Sugu" />
+		<property name="reward" value="200€" />
 		<property name="ticker" value="RUQYA-73491" />
 	</bean>
 	
@@ -132,9 +132,4 @@
 		<property name="stars" value="4"/>
 	</bean>
 
-
 </beans>
-
-
-
-
