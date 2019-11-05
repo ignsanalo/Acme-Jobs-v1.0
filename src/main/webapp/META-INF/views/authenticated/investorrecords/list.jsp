@@ -19,4 +19,3 @@
 	<acme:list-column code="authenticated.investorrecords.list.label.name" path="name" width="20%"/>
 	<acme:list-column code="authenticated.investorrecords.list.label.sector" path="sector" width="40%"/>
 </acme:list>
-

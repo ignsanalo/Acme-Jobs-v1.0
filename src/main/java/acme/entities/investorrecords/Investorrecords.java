@@ -13,7 +13,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Investor extends DomainEntity {
+public class Investorrecords extends DomainEntity {
 
 	//Attributes ------------------------------------------------------------------------
 

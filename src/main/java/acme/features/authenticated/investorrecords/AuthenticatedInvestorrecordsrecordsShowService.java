@@ -4,32 +4,32 @@ package acme.features.authenticated.investorrecords;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.investorrecords.Investor;
+import acme.entities.investorrecords.Investorrecords;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedInvestorShowService implements AbstractShowService<Authenticated, Investor> {
+public class AuthenticatedInvestorrecordsrecordsShowService implements AbstractShowService<Authenticated, Investorrecords> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInvestorRepository repository;
+	private AuthenticatedInvestorrecordsRepository repository;
 
-	// AbstractCreateService<Authenticated, Investors> ---------------------------
+	// AbstractCreateService<Authenticated, Investorrecordss> ---------------------------
 
 
 	@Override
-	public boolean authorise(final Request<Investor> request) {
+	public boolean authorise(final Request<Investorrecords> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Investor> request, final Investor entity, final Model model) {
+	public void unbind(final Request<Investorrecords> request, final Investorrecords entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -38,10 +38,10 @@ public class AuthenticatedInvestorShowService implements AbstractShowService<Aut
 	}
 
 	@Override
-	public Investor findOne(final Request<Investor> request) {
+	public Investorrecords findOne(final Request<Investorrecords> request) {
 		assert request != null;
 
-		Investor result;
+		Investorrecords result;
 		int id;
 
 		id = request.getModel().getInteger("id");

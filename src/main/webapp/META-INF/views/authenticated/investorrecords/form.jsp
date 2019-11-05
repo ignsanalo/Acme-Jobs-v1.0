@@ -18,8 +18,8 @@
 <acme:form readonly="true">
 	<acme:form-textbox code="authenticated.investorrecords.form.label.name" path="name"/>
 	<acme:form-textbox code="authenticated.investorrecords.form.label.sector" path="sector"/>
-	<acme:form-textarea code="authenticated.investorrecords.form.label.statement" path="statement"/>
-	<acme:form-textbox code="authenticated.investorrecords.form.label.stars" path="stars"/>
+	<acme:form-textbox code="authenticated.investorrecords.form.label.statement" path="statement"/>
+	<acme:form-integer code="authenticated.investorrecords.form.label.stars" path="stars"/>
 	
 	<acme:form-return code="authenticated.investorrecords.form.button.return"/>
 </acme:form>

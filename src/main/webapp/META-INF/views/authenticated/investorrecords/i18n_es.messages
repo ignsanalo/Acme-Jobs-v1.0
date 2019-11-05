@@ -10,7 +10,7 @@
 
 authenticated.investorrecords.form.label.name = Nombre:
 authenticated.investorrecords.form.label.sector = Sector:
-authenticated.investorrecords.form.label.statement = Declaracion:
+authenticated.investorrecords.form.label.statement = Declaración:
 authenticated.investorrecords.form.label.stars = Estrellas:
 authenticated.investorrecords.form.button.return = Volver
 

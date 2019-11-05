@@ -39,7 +39,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `investor` (
+    create table `investorrecords` (
        `id` integer not null,
         `version` integer not null,
         `name` varchar(255),

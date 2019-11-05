@@ -6,32 +6,32 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.investorrecords.Investor;
+import acme.entities.investorrecords.Investorrecords;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedInvestorListService implements AbstractListService<Authenticated, Investor> {
+public class AuthenticatedInvestorrecordsrecordsListService implements AbstractListService<Authenticated, Investorrecords> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInvestorRepository repository;
+	private AuthenticatedInvestorrecordsRepository repository;
 
 
 	// AbstractUpdateService<Authenticated, Announcement> interface -----------------
 
 	@Override
-	public boolean authorise(final Request<Investor> request) {
+	public boolean authorise(final Request<Investorrecords> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Investor> request, final Investor entity, final Model model) {
+	public void unbind(final Request<Investorrecords> request, final Investorrecords entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -40,11 +40,11 @@ public class AuthenticatedInvestorListService implements AbstractListService<Aut
 	}
 
 	@Override
-	public Collection<Investor> findMany(final Request<Investor> request) {
+	public Collection<Investorrecords> findMany(final Request<Investorrecords> request) {
 
 		assert request != null;
 
-		Collection<Investor> result;
+		Collection<Investorrecords> result;
 
 		result = this.repository.findManyAll();
 
