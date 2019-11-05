@@ -41,7 +41,7 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement.list = Listar anuncios
 master.menu.anonymous.investorrecords.list = Listar registros de inversores
-master.menu.anonymous.companyrecord.list = Company Records
+master.menu.anonymous.companyrecord.list = Listar registro de compañias
 
 
 # master.menu.administrator ###################################################
@@ -49,7 +49,7 @@ master.menu.anonymous.companyrecord.list = Company Records
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
-master.menu.administrator.announcement.list = Anuncios
+master.menu.administrator.announcement.list = Listar Anuncios
 
 # master.menu.provider ########################################################
 
