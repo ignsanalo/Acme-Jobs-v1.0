@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.investorrecords;
+package acme.features.anonymous.investorrecords;
 
 import java.util.Collection;
 
@@ -9,16 +9,16 @@ import org.springframework.stereotype.Service;
 import acme.entities.investorrecords.Investorrecords;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedInvestorrecordsrecordsListService implements AbstractListService<Authenticated, Investorrecords> {
+public class AnonymousInvestorrecordsListService implements AbstractListService<Anonymous, Investorrecords> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInvestorrecordsRepository repository;
+	private AnonymousInvestorrecordsRepository repository;
 
 
 	// AbstractUpdateService<Authenticated, Announcement> interface -----------------
@@ -51,4 +51,5 @@ public class AuthenticatedInvestorrecordsrecordsListService implements AbstractL
 		return result;
 
 	}
+
 }
