@@ -26,7 +26,7 @@ master.menu.home = Home
 master.menu.authenticated = Authenticated
 master.menu.user-account.announcement.list = List announcements
 master.menu.user-account.requests.list = List requests
-master.menu.user-account.companyrecords.list = List company records
+master.menu.user-account.companyrecord.list = Company records
 master.menu.user-account.investorrecords.list = List investor records
 master.menu.user-account.offer.list = List offers
 master.menu.user-account.challenge.list = List challenges
@@ -40,12 +40,14 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement.list = List announcement
 master.menu.anonymous.investorrecords.list = List Investor records
+master.menu.anonymous.companyrecord.list = Company Records
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.announcement.list = Announcement
 
 # master.menu.provider ########################################################
 
@@ -101,4 +103,5 @@ master.license.text = \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
 	local storage to keep track of the document to which some buttons must return.
+
 

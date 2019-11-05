@@ -30,6 +30,22 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
+    create table `companyrecord` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceo` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `incorporated` bit,
+        `name` varchar(255),
+        `phone` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `configuration` (
        `id` integer not null,
         `version` integer not null,
