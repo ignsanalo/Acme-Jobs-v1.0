@@ -42,7 +42,7 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 
 		Collection<Announcement> result;
 
-		result = this.repository.findManyAll();
+		result = this.repository.findManyByDate();
 
 		return result;
 	}
