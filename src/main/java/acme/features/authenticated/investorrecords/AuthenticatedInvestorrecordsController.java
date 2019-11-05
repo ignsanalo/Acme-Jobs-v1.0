@@ -19,10 +19,10 @@ public class AuthenticatedInvestorrecordsController extends AbstractController<A
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInvestorrecordsrecordsListService	listService;
+	private AuthenticatedInvestorrecordsListService	listService;
 
 	@Autowired
-	private AuthenticatedInvestorrecordsrecordsShowService	showService;
+	private AuthenticatedInvestorrecordsShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
