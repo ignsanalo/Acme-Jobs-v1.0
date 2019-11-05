@@ -15,14 +15,12 @@ import lombok.Setter;
 @Setter
 public class Configuration extends DomainEntity {
 
-	/**
-	 *
-	 */
+	
 	private static final long	serialVersionUID	= 1L;
 
-	@ElementCollection(targetClass = String.class)
-	private Collection<String>	spamWords;
+	
+	private String			spamWords;
 
-	private Double				spamThreshold;
+	private Double			spamThreshold;
 
 }
