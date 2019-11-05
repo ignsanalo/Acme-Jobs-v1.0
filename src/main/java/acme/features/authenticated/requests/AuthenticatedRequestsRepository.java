@@ -26,7 +26,7 @@ public interface AuthenticatedRequestsRepository extends AbstractRepository {
 	@Query("select r from Requests r where r.id = ?1")
 	Requests findOneById(int id);
 
-	@Query("select r from Requests r")
+	@Query("select r from Requests r where (r.deadline >= current_date())")
 	Collection<Requests> findManyAll();
 
 }
