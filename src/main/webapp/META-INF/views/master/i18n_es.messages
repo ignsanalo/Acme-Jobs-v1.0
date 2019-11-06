@@ -44,6 +44,7 @@ master.menu.anonymous.announcement.list = Listar anuncios
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.configuration = Parámetros de personalización
 
 # master.menu.provider ########################################################
 
