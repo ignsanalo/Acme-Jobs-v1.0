@@ -1,9 +1,6 @@
 
 package acme.entities.configuration;
 
-import java.util.Collection;
-
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 
 import acme.framework.entities.DomainEntity;
@@ -15,12 +12,10 @@ import lombok.Setter;
 @Setter
 public class Configuration extends DomainEntity {
 
-	
 	private static final long	serialVersionUID	= 1L;
 
-	
-	private String			spamWords;
+	private String				spamWords;
 
-	private Double			spamThreshold;
+	private Double				spamThreshold;
 
 }

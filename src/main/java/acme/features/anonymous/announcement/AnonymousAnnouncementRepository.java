@@ -1,6 +1,7 @@
 
 package acme.features.anonymous.announcement;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
@@ -15,7 +16,7 @@ public interface AnonymousAnnouncementRepository extends AbstractRepository {
 	@Query("select a from Announcement a where a.id = ?1")
 	Announcement findOneById(int id);
 
-	@Query("select a from Announcement a where TIMESTAMPDIFF(DAY, moment, NOW()) < 30")
-	Collection<Announcement> findManyByDate();
+	@Query("select a from Announcement a where a.moment > ?1")
+	Collection<Announcement> findManyByDateGreater(LocalDateTime moment);
 
 }

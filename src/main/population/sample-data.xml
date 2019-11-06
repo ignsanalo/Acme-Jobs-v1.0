@@ -15,7 +15,7 @@
 
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01" />
-		<property name="moment" value="2019/06/10 10:35" />
+		<property name="moment" value="2019/11/04 10:35" />
 		<property name="moreInfo">
 			<null />
 		</property>
@@ -24,7 +24,7 @@
 
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 02" />
-		<property name="moment" value="2019/06/10 00:00" />
+		<property name="moment" value="2018/06/10 00:00" />
 		<property name="moreInfo">
 			<null />
 		</property>
@@ -34,7 +34,7 @@
 
 	<bean id="announcement03" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 03" />
-		<property name="moment" value="1900/10/10 19:10" />
+		<property name="moment" value="2019/11/05 19:10" />
 		<property name="moreInfo">
 			<null />
 		</property>
@@ -43,7 +43,7 @@
 
 	<bean id="announcement04" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 04" />
-		<property name="moment" value="2019/10/29 19:10" />
+		<property name="moment" value="2019/10/11 19:10" />
 		<property name="moreInfo">
 			<null />
 		</property>

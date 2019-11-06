@@ -1,6 +1,7 @@
 
 package acme.features.anonymous.announcement;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,9 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 
 		Collection<Announcement> result;
 
-		result = this.repository.findManyByDate();
+		LocalDateTime actual = LocalDateTime.now();
+
+		result = this.repository.findManyByDateGreater(actual);
 
 		return result;
 	}
