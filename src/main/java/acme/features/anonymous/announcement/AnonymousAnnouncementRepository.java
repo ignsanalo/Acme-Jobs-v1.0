@@ -1,8 +1,8 @@
 
 package acme.features.anonymous.announcement;
 
-import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -17,6 +17,6 @@ public interface AnonymousAnnouncementRepository extends AbstractRepository {
 	Announcement findOneById(int id);
 
 	@Query("select a from Announcement a where a.moment > ?1")
-	Collection<Announcement> findManyByDateGreater(LocalDateTime moment);
+	Collection<Announcement> findManyByDateGreater(Date moment);
 
 }

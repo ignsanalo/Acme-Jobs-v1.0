@@ -17,7 +17,7 @@
 		<property name="title" value="Sample announcement 01" />
 		<property name="moment" value="2019/11/04 10:35" />
 		<property name="moreInfo">
-			<null />
+		<null />
 		</property>
 		<property name="text" value="This is a description of a sample announcement" />
 	</bean>
@@ -84,7 +84,7 @@
 
 	<bean id="request01" class="acme.entities.requests.Requests">
 		<property name="title" value="Sample request 01" />
-		<property name="moment" value="2019/10/05 17:31" />
+		<property name="moment" value="2019/06/10 17:31" />
 		<property name="deadline" value="2021/11/10 23:30" />
 		<property name="text" value="This is a description of a sample request" />
 		<property name="reward" value="500€" />
