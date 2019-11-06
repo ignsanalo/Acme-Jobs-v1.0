@@ -316,19 +316,105 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-
-      <x>378</x>
-      <y>406</y>
-      <w>210</w>
-      <h>70</h>
+      <x>343</x>
+      <y>399</y>
+      <w>308</w>
+      <h>91</h>
     </coordinates>
-    <panel_attributes>Investors
+    <panel_attributes>Requests
+--
++ title: String {NotBlank}
++ moment:Date {Temporal{TIMESTAMP},PAST}
++ deadline: Date {Date}
++ text: String {NotBlank}
++ reward: String {NotBlank}
++ ticker: String {NotBlank, Unique, Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>511</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Offer
+--
++ title: String {NotBlank}
++ moment:Date {Temporal{TIMESTAMP},PAST}
++ deadline: Date {Date}
++ text: String {NotBlank}
++ amount: double {Digits(10, 2)}
++ ticker: String {NotBlank}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>511</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>CompanyRecord
 --
 + name: String {NotBlank}
 + sector: String {NotBlank}
++ ceo: String {NotBlank}
++ description: String {NotBlank}
++ web : String {URL}
++ phone: String {NotBlank, Pattern(regexp = "^([+][1-9]{0,3}[\\s]{0,1})?([(][1-9]{0,4}[)][\\s]{0,1})?[0-9]{6,10}$")}
++ email: String {Email,NotNull}
++ starts: Integer {Min(0)}{Max(5)}
++ incorporated: Boolean {NotBlank, NotNull}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>623</y>
+      <w>203</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Store record
+--
++ name: String {NotBlank}
++ sector:String {NotBlank}
++ sectorname: String {NotBlank}
 + statement: String {NotBlank}
-+ stars: Integer {Min(value = 0), Max(value=5)}</panel_attributes>
 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>602</y>
+      <w>231</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String {NotBlank}
++ deadline:Date {Temporal{TIMESTAMP}}
++ description: String {NotBlank}
++ goalgold : String {NotBlank}
++ rewardgold : Money {NotNull, Valid}
++ goalsilver : String {NotBlank}
++ rewardsilver : Money {NotNull, Valid}
++ goalbronze : String {NotBlank}
++ rewardbronze : Money {NotNull, Valid}
+
+
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

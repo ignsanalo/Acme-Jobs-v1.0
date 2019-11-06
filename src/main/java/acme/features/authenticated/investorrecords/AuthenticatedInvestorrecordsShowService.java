@@ -11,7 +11,7 @@ import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedInvestorrecordsrecordsShowService implements AbstractShowService<Authenticated, Investorrecords> {
+public class AuthenticatedInvestorrecordsShowService implements AbstractShowService<Authenticated, Investorrecords> {
 
 	// Internal state ---------------------------------------------------------
 

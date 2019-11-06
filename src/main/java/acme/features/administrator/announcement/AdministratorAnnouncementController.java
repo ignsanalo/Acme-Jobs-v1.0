@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.offer;
+package acme.features.administrator.announcement;
 
 import javax.annotation.PostConstruct;
 
@@ -7,25 +7,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.offers.Offer;
+import acme.entities.announcements.Announcement;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/authenticated/offer/")
-public class AuthenticatedOfferController extends AbstractController<Authenticated, Offer> {
+@RequestMapping("/administrator/announcement/")
+
+public class AdministratorAnnouncementController extends AbstractController<Administrator, Announcement> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedOfferListService	listService;
+	private AdministratorAnnouncementListService	listService;
 
 	@Autowired
-	private AuthenticatedOfferShowService	showService;
+	private AdministratorAnnouncementShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
+
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);

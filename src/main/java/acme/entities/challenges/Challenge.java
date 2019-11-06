@@ -1,18 +1,14 @@
 
-
-package acme.entities.requests;
+package acme.entities.challenges;
 
 import java.util.Date;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -22,7 +18,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Requests extends DomainEntity {
+public class Challenge extends DomainEntity {
 
 	//Attributes ------------------------------------------------------------------------
 
@@ -32,27 +28,34 @@ public class Requests extends DomainEntity {
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Past
-	private Date				moment;
-
-	@Temporal(TemporalType.TIMESTAMP)
 	private Date				deadline;
 
 	@NotBlank
-	private String				text;
+	private String				description;
+
+	@NotBlank
+	private String				goalGold;
 
 	@NotNull
 	@Valid
-	private Money				reward;
+	private Money				rewardGold;
 
-	@Column(unique = true)
-	@Pattern(regexp = "^[R]{1}[A-Z]{4}\\-[0-9]{5}$")
 	@NotBlank
-	private String				ticker;
+	private String				goalSilver;
+
+	@NotNull
+	@Valid
+	private Money				rewardSilver;
+
+	@NotBlank
+	private String				goalBronze;
+
+	@NotNull
+	@Valid
+	private Money				rewardBronze;
 
 	// Derived attributes -----------------------------------------------------------------
 
 	// Relationships ----------------------------------------------------------------------
 
 }
-

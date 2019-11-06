@@ -1,37 +1,37 @@
 
-package acme.features.authenticated.investorrecords;
+package acme.features.anonymous.companyrecord;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.investorrecords.Investorrecords;
+import acme.entities.companyrecords.Companyrecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedInvestorrecordsrecordsListService implements AbstractListService<Authenticated, Investorrecords> {
+public class AnonymousCompanyrecordListService implements AbstractListService<Anonymous, Companyrecord> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedInvestorrecordsRepository repository;
+	private AnonymousCompanyrecordRepository repository;
 
 
 	// AbstractUpdateService<Authenticated, Announcement> interface -----------------
 
 	@Override
-	public boolean authorise(final Request<Investorrecords> request) {
+	public boolean authorise(final Request<Companyrecord> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Investorrecords> request, final Investorrecords entity, final Model model) {
+	public void unbind(final Request<Companyrecord> request, final Companyrecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -40,15 +40,16 @@ public class AuthenticatedInvestorrecordsrecordsListService implements AbstractL
 	}
 
 	@Override
-	public Collection<Investorrecords> findMany(final Request<Investorrecords> request) {
+	public Collection<Companyrecord> findMany(final Request<Companyrecord> request) {
 
 		assert request != null;
 
-		Collection<Investorrecords> result;
+		Collection<Companyrecord> result;
 
 		result = this.repository.findManyAll();
 
 		return result;
 
 	}
+
 }

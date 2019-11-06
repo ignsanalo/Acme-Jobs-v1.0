@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.announcement;
+package acme.features.administrator.announcement;
 
 import java.util.Collection;
 
@@ -10,12 +10,12 @@ import acme.entities.announcements.Announcement;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AnonymousAnnouncementRepository extends AbstractRepository {
+public interface AdministratorAnnouncementRepository extends AbstractRepository {
 
 	@Query("select a from Announcement a where a.id = ?1")
 	Announcement findOneById(int id);
 
-	@Query("select a from Announcement a where TIMESTAMPDIFF(DAY, moment, NOW()) < 30")
-	Collection<Announcement> findManyByDate();
+	@Query("select a from Announcement a")
+	Collection<Announcement> findManyAll();
 
 }

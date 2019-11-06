@@ -12,7 +12,7 @@
 
 master.banner.background = #FFE97F 
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -25,10 +25,10 @@ master.menu.home = Inicio
 master.menu.authenticated = Autenticado
 master.menu.user-account.announcement.list = Listar anuncios
 master.menu.user-account.requests.list = Listar peticiones
-master.menu.user-account.companyrecords.list = Listar registros de la compañía
-master.menu.user-account.investorrecords.list = Listar registros de inversionistas
+master.menu.user-account.companyrecord.list = Listar registro de compañias
+master.menu.user-account.investorrecords.list = Listar registros de inversores
 master.menu.user-account.offer.list = Listar ofertas
-master.menu.user-account.challenges.list = Listar desafíos
+master.menu.user-account.challenge.list = Listar desafíos
 master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
@@ -38,12 +38,16 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement.list = Listar anuncios
+master.menu.anonymous.investorrecords.list = Listar registros de inversores
+master.menu.anonymous.companyrecord.list = Listar registro de compañias
+
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcement.list = Listar Anuncios
 master.menu.administrator.configuration = Parámetros de personalización
 
 # master.menu.provider ########################################################
@@ -101,3 +105,4 @@ master.license.text = \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
 	
+

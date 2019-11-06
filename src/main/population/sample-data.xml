@@ -131,5 +131,84 @@
 		<property name="statement" value="This is a short statement" />
 		<property name="stars" value="4"/>
 	</bean>
+  
+  		<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 01" />
+		<property name="deadline" value="2020/11/10 00:00" />
+		<property name="description" value="This is a description of a sample challenge"/>
+		<property name="goalGold" value="This is the goal gold"/>
+		<property name="rewardGold" value="€1000.0"/>
+		<property name="goalSilver" value="This is the goal silver"/>
+		<property name="rewardSilver" value="€800.0"/>
+		<property name="goalBronze" value="This is the goal bronze"/>
+		<property name="rewardBronze" value="€500.0"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 02" />
+		<property name="deadline" value="2020/09/07 00:00" />
+		<property name="description" value="This is a description of another sample challenge"/>
+		<property name="goalGold" value="This is the goal gold"/>
+		<property name="rewardGold" value="€400.0"/>
+		<property name="goalSilver" value="This is the goal silver"/>
+		<property name="rewardSilver" value="€200.0"/>
+		<property name="goalBronze" value="This is the goal bronze"/>
+		<property name="rewardBronze" value="€100.0"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 03" />
+		<property name="deadline" value="2021/03/10 17:00" />
+		<property name="description" value="This is a new sample challenge"/>
+		<property name="goalGold" value="This is the goal gold"/>
+		<property name="rewardGold" value="€100.0"/>
+		<property name="goalSilver" value="This is the goal silver"/>
+		<property name="rewardSilver" value="€50.0"/>
+		<property name="goalBronze" value="This is the goal bronze"/>
+		<property name="rewardBronze" value="€25.0"/>
+	</bean>
+  
+  <!-- CompanyRecords -->
+  
+  <bean id="companyrecord1" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Carlosia" />
+		<property name="sector" value="Bacalao" />
+		<property name="ceo" value="Carles" />
+		<property name="description" value="This is a very old empresa"/>
+		<property name="web" value="https://elpais.com/" />
+		<property name="phone" value="+32(999)123456" />
+		<property name="email" value="Carles@gmail.com" />
+		<property name="incorporated" value="false" />
+		<property name="stars" value="4" />
+		
+	</bean>
+	
+	<bean id="companyrecord2" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Acme" />
+		<property name="sector" value="Pescado" />
+		<property name="ceo" value="Antonio" />
+		<property name="description" value="I like this world"/>
+		<property name="web" value="https://elpais.com/" />
+		<property name="phone" value="123456789" />
+		<property name="email" value="Manu@gmail.com" />
+		<property name="incorporated" value="false" />
+		<property name="stars" value="4" />
+		
+	</bean>
+	
+	<bean id="companyrecord3" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="PitiClin" />
+		<property name="sector" value="Muebles" />
+		<property name="ceo" value="Manuel" />
+		<property name="description" value="What a fantastic furniture"/>
+		<property name="web" value="https://elpais.com/" />
+		<property name="phone" value="+32 123456" />
+		<property name="email" value="Antonio@gmail.com" />
+		<property name="incorporated" value="true" />
+		<property name="stars" value="1" />
+		
+	</bean>
 
 </beans>
