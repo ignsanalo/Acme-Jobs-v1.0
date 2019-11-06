@@ -301,13 +301,13 @@ has v</panel_attributes>
     <coordinates>
       <x>56</x>
       <y>406</y>
-      <w>217</w>
+      <w>224</w>
       <h>77</h>
     </coordinates>
     <panel_attributes>Announcement
 --
 + title: String {NotBlank}
-+ moment:Date {Temporal{TIMESTAMP},PAST}
++ moment: Date {Temporal{TIMESTAMP}, PAST}
 + moreInfo: String {URL}
 + text: String {NotBlank}
 </panel_attributes>
@@ -316,18 +316,18 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>343</x>
-      <y>399</y>
+      <x>378</x>
+      <y>497</y>
       <w>308</w>
       <h>91</h>
     </coordinates>
     <panel_attributes>Requests
 --
 + title: String {NotBlank}
-+ moment:Date {Temporal{TIMESTAMP},PAST}
++ moment: Date {Temporal{TIMESTAMP}, PAST}
 + deadline: Date {Date}
 + text: String {NotBlank}
-+ reward: String {NotBlank}
++ reward: Money {NotNull, Valid}
 + ticker: String {NotBlank, Unique, Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}
 
 </panel_attributes>
@@ -338,17 +338,17 @@ has v</panel_attributes>
     <coordinates>
       <x>56</x>
       <y>511</y>
-      <w>217</w>
-      <h>77</h>
+      <w>273</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>Offer
 --
 + title: String {NotBlank}
-+ moment:Date {Temporal{TIMESTAMP},PAST}
++ moment: Date {Temporal{TIMESTAMP}, PAST}
 + deadline: Date {Date}
 + text: String {NotBlank}
-+ amount: double {Digits(10, 2)}
-+ ticker: String {NotBlank}
++ range : Money {NotNull, Valid}
++ ticker: String {NotBlank, Pattern{^[O]{1}[A-Z]{4}\\-[0-9]{5}$}
 
 </panel_attributes>
     <additional_attributes/>
@@ -356,10 +356,10 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>343</x>
-      <y>511</y>
-      <w>217</w>
-      <h>77</h>
+      <x>336</x>
+      <y>357</y>
+      <w>476</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>CompanyRecord
 --
@@ -367,11 +367,11 @@ has v</panel_attributes>
 + sector: String {NotBlank}
 + ceo: String {NotBlank}
 + description: String {NotBlank}
-+ web : String {URL}
++ web : String {NotBlank, URL}
 + phone: String {NotBlank, Pattern(regexp = "^([+][1-9]{0,3}[\\s]{0,1})?([(][1-9]{0,4}[)][\\s]{0,1})?[0-9]{6,10}$")}
-+ email: String {Email,NotNull}
-+ starts: Integer {Min(0)}{Max(5)}
-+ incorporated: Boolean {NotBlank, NotNull}
++ email: String {Email, NotNull}
++ starts: Integer {Min(0), Max(5)}
++ incorporated: Boolean {NotNull}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -383,12 +383,12 @@ has v</panel_attributes>
       <w>203</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Store record
+    <panel_attributes>Investor records
 --
 + name: String {NotBlank}
 + sector:String {NotBlank}
-+ sectorname: String {NotBlank}
 + statement: String {NotBlank}
++ stars: Integer {Min{0}, Max{5}}
 
 </panel_attributes>
     <additional_attributes/>
@@ -404,7 +404,7 @@ has v</panel_attributes>
     <panel_attributes>Challenge
 --
 + title: String {NotBlank}
-+ deadline:Date {Temporal{TIMESTAMP}}
++ deadline: Date {Temporal{TIMESTAMP}}
 + description: String {NotBlank}
 + goalgold : String {NotBlank}
 + rewardgold : Money {NotNull, Valid}
@@ -415,6 +415,40 @@ has v</panel_attributes>
 
 
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>84</y>
+      <w>308</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Requests
+--
++ title: String {NotBlank}
++ moment: Date {Temporal{TIMESTAMP}, PAST}
++ deadline: Date {Date}
++ text: String {NotBlank}
++ reward: Money {NotNull, Valid}
++ ticker: String {NotBlank, Unique, Pattern{^[R]{1}[A-Z]{4}\\-[0-9]{5}$}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>595</x>
+      <y>609</y>
+      <w>126</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Configuration
+--
++ spamWords: String
++ spamThreshold : Double</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

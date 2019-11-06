@@ -13,6 +13,7 @@
 authenticated.offer.list.label.title = Título
 authenticated.offer.list.label.moment = Momento
 authenticated.offer.list.label.deadline = Fecha límite
+authenticated.offer.form.button.return = Volver
 
 authenticated.offer.form.label.title = Título:
 authenticated.offer.form.label.moment = Momento:

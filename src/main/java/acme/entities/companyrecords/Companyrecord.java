@@ -49,13 +49,12 @@ public class Companyrecord extends DomainEntity {
 	@NotNull
 	private String				email;
 
-	@NotNull
-	private Boolean				incorporated;
-
 	@Min(0)
 	@Max(5)
-
 	private Integer				stars;
+
+	@NotNull
+	private Boolean				incorporated;
 
 
 	//Derivados
